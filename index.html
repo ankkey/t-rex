@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🦕 Dino Game Enhanced</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body class="offline">
+  <div class="game-wrapper">
+    <!-- Header -->
+    <div class="game-header">
+      <span class="title">🦕 DINO ENHANCED</span>
+      <span class="subtitle">by Google Dino × Custom Mods</span>
+    </div>
+
+    <!-- Canvas -->
+    <div class="canvas-container">
+      <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Controls hint bar -->
+    <div class="controls-bar">
+      <span>↑ / Space — Nhảy (2 lần)</span>
+      <span>↓ — Cúi</span>
+      <span>X — Bắn súng (mở khóa ở 1000pt)</span>
+      <span>Mobile: chạm phải = nhảy, chạm trái = bắn</span>
+    </div>
+
+    <!-- Milestone chart -->
+    <div class="milestone-panel">
+      <h3>🏆 Mốc mở khóa</h3>
+      <div class="milestones">
+        <div class="milestone" data-score="100">
+          <span class="m-icon">🦅</span>
+          <div>
+            <strong>100pt — Pterodactyl đồng minh</strong>
+            <p>Bay theo sau, tiêu diệt pterodactyl địch tự động</p>
+          </div>
+        </div>
+        <div class="milestone" data-score="250">
+          <span class="m-icon">🛸</span>
+          <div>
+            <strong>250pt — UFO hộ tống</strong>
+            <p>Bay phía trước, tự động bắn phá chướng ngại vật (hồi 2s)</p>
+          </div>
+        </div>
+        <div class="milestone" data-score="500">
+          <span class="m-icon">📦</span>
+          <div>
+            <strong>500pt — Thùng gỗ xuất hiện</strong>
+            <p>Đâm vào sẽ bị chậm + trừ điểm. UFO có thể bắn phá!</p>
+          </div>
+        </div>
+        <div class="milestone" data-score="600">
+          <span class="m-icon">🐢</span>
+          <div>
+            <strong>600pt — Slime di chuyển ngược chiều</strong>
+            <p>Chạm vào bị giảm tốc 20% trong 5 giây</p>
+          </div>
+        </div>
+        <div class="milestone" data-score="1000">
+          <span class="m-icon">🔫</span>
+          <div>
+            <strong>1000pt — Súng trên lưng</strong>
+            <p>Nhấn X để bắn đạn nổ, hồi chiêu 5s</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pickups info -->
+    <div class="pickups-panel">
+      <h3>⚡ Vật phẩm ngẫu nhiên</h3>
+      <div class="pickup-items">
+        <div class="pickup-item">
+          <span>⭐</span>
+          <div><strong>Bất tử 5s</strong><p>Không va chạm tử vong</p></div>
+        </div>
+        <div class="pickup-item">
+          <span>🛡</span>
+          <div><strong>Khiên bảo vệ</strong><p>Hấp thụ 1 đòn tử vong</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
